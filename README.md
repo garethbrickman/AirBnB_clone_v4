@@ -1,6 +1,6 @@
 <img src="https://github.com/jarehec/AirBnB_clone_v3/blob/master/dev/HBTN-hbnb-Final.png" width="160" height=auto />
 
-# AirBnB Clone: Phase # 3
+# AirBnB Clone: Phase # 4
 
 : API with Swagger
 
@@ -167,33 +167,6 @@ $ HBNB_MYSQL_USER=hbnb_test HBNB_MYSQL_PWD=hbnb_test_pwd \
 HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 ./console.py
 ```
-#### Check the console
-```
-"#### SCRIPT LOADED ####" -> means the page has successfully incorporated present jquery scripts
-"#### BOX CHECKED ####" 
-      -> confirms the checkbox being filled is read properly.
-
-"#### BOX UNCHECKED ####" 
-      -> confirms the checkbox is unfilled and read properly.
-
-"#### API OK ####" 
-      -> connection to api is working.
-
-"#### API NOT OK ####" 
-      -> connection to api is not working.
-
-"#### POST SUCCESS ####" 
-      -> post request was successful.
-
-"#### DATA ####" 
-      -> data is readable
-
-"#### Error, status = ' + textStatus + ', ' + 'error thrown: ' + errorThrown ####" 
-      -> shows error and supporting information
-
-"#### Peeling JSON onion ####" 
-      -> able to read json data to be used for html render
-```
 
 #### For a detailed description of all tests, run these commands in the CLI:
 
@@ -236,6 +209,36 @@ create: create [ARG] [PARAM 1] [PARAM 2] ...
 
 Uses [Travis-CI](https://travis-ci.org/) to run all tests on all commits to the
 github repo
+
+#### Status Messages in the Web Browser Developer Console
+```
+"#### SCRIPT LOADED ####" 
+       -> means the page has successfully incorporated present jquery scripts
+       
+"#### BOX CHECKED ####" 
+      -> confirms the checkbox being filled is read properly.
+
+"#### BOX UNCHECKED ####" 
+      -> confirms the checkbox is unfilled and read properly.
+
+"#### API OK ####" 
+      -> connection to api is working.
+
+"#### API NOT OK ####" 
+      -> connection to api is not working.
+
+"#### POST SUCCESS ####" 
+      -> post request was successful.
+
+"#### DATA ####" 
+      -> data is readable
+
+"#### Error, status = ' + textStatus + ', ' + 'error thrown: ' + errorThrown ####" 
+      -> shows error and supporting information
+
+"#### Peeling JSON onion ####" 
+      -> able to read json data to be used for html render
+```
 
 ## Authors
 
