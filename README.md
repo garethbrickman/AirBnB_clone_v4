@@ -1,14 +1,47 @@
-<img src="https://github.com/jarehec/AirBnB_clone_v3/blob/master/dev/HBTN-hbnb-Final.png" width="160" height=auto />
+<img src="HBTN-hbnb-Final.png" width="160" height=auto />
 
 # AirBnB Clone: Phase # 4
 
-: API with Swagger
-
 ## Description
 
-Project attempts to clone the the AirBnB application and website, including the
-database, storage, RESTful API, Web Framework, and Front End.  Currently the
-application is designed to run with 2 storage engine models:
+Project attempts to clone the the AirBnB listing page, including the
+database, storage, RESTful API, Web Framework, and Front End.  
+
+## Example of final product:
+
+<p align="center">
+  <img src="example.png">
+</p>
+
+## Techstack
+
+<p align="center">
+  <img src="hbnb_step5.png" />
+</p>
+
+## Schemas
+
+<p align="center">
+<img src="AirBnb_DB_diagramm.jpg">
+</p>
+
+## Environment
+
+* __OS:__ Ubuntu 14.04 LTS
+* __language:__ Python 3.4.3
+* __web server:__ nginx/1.4.6
+* __application server:__ Flask 0.12.2, Jinja2 2.9.6
+* __web server gateway:__ gunicorn (version 19.7.1)
+* __database:__ mysql Ver 14.14 Distrib 5.7.18
+* __documentation:__ Swagger (flasgger==0.6.6)
+* __style:__
+  * __python:__ PEP 8 (v. 1.7.0)
+  * __web static:__ [W3C Validator](https://validator.w3.org/)
+  * __bash:__ ShellCheck 0.3.3
+
+## Configuration
+
+Currently the application is designed to run with 2 storage engine models:
 
 * File Storage Engine:
 
@@ -32,24 +65,6 @@ HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 [COMMAND HERE]
 ```
 
-## Environment
-
-* __OS:__ Ubuntu 14.04 LTS
-* __language:__ Python 3.4.3
-* __web server:__ nginx/1.4.6
-* __application server:__ Flask 0.12.2, Jinja2 2.9.6
-* __web server gateway:__ gunicorn (version 19.7.1)
-* __database:__ mysql Ver 14.14 Distrib 5.7.18
-* __documentation:__ Swagger (flasgger==0.6.6)
-* __style:__
-  * __python:__ PEP 8 (v. 1.7.0)
-  * __web static:__ [W3C Validator](https://validator.w3.org/)
-  * __bash:__ ShellCheck 0.3.3
-
-<img src="https://github.com/jarehec/AirBnB_clone_v3/blob/master/dev/hbnb_step5.png" />
-
-## Configuration Files
-
 The `/config/` directory contains configuration files for `nginx` and the
 Upstart scripts.  The nginx configuration file is for the configuration file in
 the path: `/etc/nginx/sites-available/default`.  The enabled site is a sym link
@@ -71,7 +86,7 @@ The `gunicorn` command starts an instance of a Flask Application.
 
 ### Web Server Gateway Interface (WSGI)
 
-All integration with gunicorn occurs with `Upstart` `.conf` files.  The python
+All integration with gunicorn occurs with `Upstart` `.conf` files.  The Python
 code for the WSGI is listed in the `/wsgi/` directory.  These python files run
 the designated Flask Application.
 
