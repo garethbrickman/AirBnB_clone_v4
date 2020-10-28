@@ -13,7 +13,7 @@ database, storage, RESTful API, Web Framework, and Front End.
   <img src="example.png">
 </p>
 
-## Techstack
+## Tech Stack
 
 <p align="center">
   <img src="hbnb_step5.png" />
